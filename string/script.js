@@ -96,3 +96,45 @@ console.log(novoValor);
 console.log(`trim: ${str.trim()}`);// trim e uma funçao que vai gerar uma nova string sem os espaços em branco no inicio e no final 
 console.lot(`trim:${str.trim()}`);// 
 //-------------------------
+//--------------------TESTES 2---------------------------------
+const str = "Maria Silva  ";
+console.log(`const str = "Maria Silva  "`); //interpolação pode colocar expressões dentro das chaves.
+
+str.toLowerCase(); // funçaõ que converte a string para minuscula
+
+const resultado = str.toLowerCase(); // 
+
+console.log(`str.toLowerCase(): ${str.toLowerCase()}`);// resultado tudo minusculo
+console.log(`toUppercase(): ${str.toUpperCase()}`); // resultado tudo maisculo  
+//-------
+console.log(`str.charAt(0): ${str.charAt(3)}`);//letra posiçao 3 da string
+console.log(`str.charAt(0): ${str[3]}`)// outraforma de pegar a letra da string
+
+//------
+console.log(`str.charAt: ${str.replace('Maria', 'João')}`); //substitui a palavra Maria por João
+console.log(`str.charAt: ${str.replace('i', '$')}`);
+
+//------
+
+// quando e metodo e roxo quando e propriedade e azul
+console.log(`str.length: ${str.length}`); // tamanho da string
+//-------
+console.log(`indexOf: ${str.indexOf("i")}`); // posição da letra i
+console.log(`lastIndexOf: ${str.lastIndexOf("i")}`); // posição da ultima letra i
+//------
+console.log(`substring(0, 5): ${str.substring(3)}`); // pega a string da posição 3 em diante
+console.log(`substring(0, 5): ${str.substring(3, 9)}`); // pega a string da posição 0 a 5 a posiçao final pega uma a mais da que vc quer terminar
+
+const data = "14/10/2021";
+
+const mes = Number(data.substring(3, 5)); // pega o mes da data
+console.log(mes);
+
+//-------
+const valor = 200.99;// na forma de numero 
+const novoValor = valor.toString().replace(".", ","); // converte o valor para string e replace troca o ponto por virgula
+console.log(novoValor);
+
+//-- toLowerCase() aplicar o tolwerCase converter para guardar minuscula
+
+console.log(`trim: ${str.trim()}`); // tira/apaga os espaços em branco do inicio e do final da string
