@@ -44,3 +44,48 @@ Referências
 https://www.w3schools.com/js/
 https://developer.mozilla.org/pt-BR/docs/Web/JavaScript
 https://eloquentjavascript.net/
+------------------------------------------
+EXERCICIOS – DEV
+Problema "maior_numero" Escreva um programa que leia uma quantidade de números, e no final mostre o maior dos números. Exemplo: 
+ENTRADA	SAÍDA
+5.5
+7 4.23 
+9.1 
+7.3	9.1  
+---------------------	
+Problema "media_ponderada" (adaptado de URI 1079) Leia 3 valores reais, para os quais você deverá calcular e mostrar a média ponderada, sendo que o primeiro valor tem peso 2, o segundo valor tem peso 3 e o terceiro valor tem peso 5. Vale lembrar que a média ponderada é a soma de todos os valores multiplicados pelo seu respectivo peso, dividida pela soma dos pesos.
+ENTRADA	SAÍDA
+6.5 4.3 6.2   	MEDIA = 5.7
+Ex2	
+5.1 
+4.2 
+8.1	MEDIA = 6.3
+----------------	
+Problema "tabuada" Ler um número inteiro N, daí mostrar na tela a tabuada de N para 1 a 10, conforme exemplo. Exemplo:
+ENTRADA	SAÍDA
+4	4 x 1 = 4 
+4 x 2 = 8 
+4 x 3 = 12 
+4 x 4 = 16 
+4 x 5 = 20 
+4 x 6 = 24 
+4 x 7 = 28 
+4 x 8 = 32 
+4 x 9 = 36 
+4 x 10 = 40
+---------------	
+Problema "media_positivos" Faça um programa para ler uma coleção de números, e depois mostrar a média aritmética somente dos número positivos com duas casas decimais. Se não houver nenhum número positivo, mostrar a mensagem "IMPOSSIVEL CALCULAR".
+ENTRADA	SAÍDA
+31 
+0 
+27 -5 
+46	MEDIA = 34.67
+--------------------
+Problema "dentro_fora" (adaptado de URI 1072) Leia uma coleção de valores inteiros, depois mostre quantos destes valores estão dentro do intervalo [10,20] e quantos estão fora do intervalo, conforme exemplo
+ENTRADA	SAÍDA
+14 
+35 
+10 
+131 
+8	 2 DENTRO 
+3 FORA
