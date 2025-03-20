@@ -1,19 +1,40 @@
-//Escreva um programa que leia uma quantidade de números, e no final mostra o mair dos numeros.
+//Escreva um prog que leia uma quantidade de numeros e no final mostro o mair dos numenros
+//conteudo no html
 
-const quantidade = document.getElementById("quantidade").innerHTML.split('\n').map(x => Number(x));
-//getElementsById pega o elemento pelo id, 
-// innerHTML pega o conteudo do elemento, 
-//split separa o conteudo por quebra de linha, map percorre o array e Number transforma o conteudo em numero
-//map(x => Number(x)); percorre o array e transforma o conteudo em numero
+//const dados = document.getElementById("dados");
+//pega o elemento inteiro
+//console.log(dados);
 
-console.log(quantidade);// console.log mostra o conteudo no console do navegador
+//pega so conteudo do elemento
+//console.log(dados.innerHTML);
 
-let maior = quantidade[0]; //variavel maior recebe o primeiro numero do array
+//ja pega o elemento e ja extrai o conteudo dele e jogo o resultado em dados
+//const dados = document.getElementById("dados").innerHTML;
+//console.log(dados);
 
-for (let i=1; i<quantidade.length; i++) {// for percorre o array
-    if (quantidade[i] > maior) {
-        maior = quantidade[i];
+
+//recortar string pegar cada elemento separadamente colocando \n quebra de linha 
+//const dados = document.getElementById("dados").innerHTML.split("\n");
+//console.log(dados);
+// resultado veto com cada elemento separado na forma de string
+
+
+// resultado veto com cada elemento separado na forma de conversao de  string para numero
+// cria um arrays de 5 elementos cada e um numero
+//const dados = document.getElementById("dados").innerHTML.split("\n").map(x => Number(x));
+//console.log(dados);
+
+
+// se achar o anterior muito grande pode fazer de forma mais legivel
+const conteudo = document.getElementById("dados")
+const dados =  conteudo.innerHTML.split("\n").map(x => Number(x));
+console.log(dados);
+
+let maior = dados[0];
+
+for (let i = 1; i < dados.length; i++) {
+    if (dados[i] > maior) {
+        maior = dados[i];
     }
 }
-
 console.log(maior);
